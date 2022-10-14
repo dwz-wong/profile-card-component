@@ -36,7 +36,7 @@ This is a solution to the [Profile card component challenge on Frontend Mentor](
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: [Responsive Profile Card Component](https://www.frontendmentor.io/solutions/responsive-profile-card-component-Ft_fpB6q3Q)
 - Live Site URL: [Profile Card Component with Tailwind CSS](https://dwz-wong.github.io/profile-card-component/)
 
 ## My process
