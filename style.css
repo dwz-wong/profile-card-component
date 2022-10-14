@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+:root {
+    --white: rgba(255, 255, 255);
+    --dark-cyan: hsl(185, 75%, 39%);
+    --very-dark-desaturated-blue: hsl(229, 23%, 23%);
+    --dark-grayish-blue: hsl(227, 10%, 46%);
+    --dark-gray: hsl(0, 0%, 59%);
+    --kumbh-font-400-700: 'Kumbh Sans', sans-serif;
+}
+
+.attribution { text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body { font-family: var(--kumbh-font-400-700); }
+
+.bg-container {
+    height: 100vh;
+    position: relative;
+    background-color: var(--dark-cyan);
+    overflow: hidden;
+}
+
+.bg-pattern-top {
+    height: auto;
+    width: 100%;
+    display: block;
+    position: absolute;
+}
+
+.bg-pattern-bottom {
+    height: auto;
+    width: 100%;
+    display: block;
+    position: absolute;
+}
+
+.profile-card {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: var(--white);
+}
+
+.bg-pattern-card {
+    height: auto;
+    width: 100%;
+    display: block;
+}
+
+.victor {
+    height: auto;
+    width: 28%;
+    display: block;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -100%);
+}
+
+.name-age {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.age { color: var(--dark-grayish-blue); }
+
+.city { text-align: center; }
+
+hr { color: var(--dark-grayish-blue); width: 100%; }
+
+.stats { 
+    display: flex; 
+    justify-content: center; 
+    text-align: center; 
+}
+
+@media (max-width: 768px) {
+    .attribution { font-size: 1.432vw; }
+
+    .bg-pattern-top {
+        bottom: 50%;
+        right: 45%;
+    }
+    
+    .bg-pattern-bottom {
+        top: 50%;
+        left: 45%;
+    }
+
+    .profile-card { 
+        border-radius: 1.302vw; 
+        width: 46%; 
+        box-shadow: 0 0.520vw 1.042vw 0 rgba(0, 0, 0, 0.2), 0 0.782vw 2.604vw 0 rgba(0, 0, 0, 0.19);
+    }
+
+    .bg-pattern-card {
+        border-top-left-radius: 1.302vw;
+        border-top-right-radius: 1.302vw;
+    }
+
+    .victor { outline: 0.716vw solid var(--white); }
+
+    .name-age {
+        padding-top: 10vw;
+        gap: 1.2vw;
+    }
+
+    .name,
+    .age { font-size: 2.344vw; }
+
+    .city { 
+        font-size: 1.954vw;
+        margin-top: 1.2vw;
+        margin-bottom: 4vw;
+    }
+
+    hr { border-width: 0 0 0.260vw; }
+
+    .stats {
+        gap: 6vw;
+        margin: 3vw;
+    }
+
+    .followers h3,
+    .likes h3,
+    .photos h3 { font-size: 2.4vw; }
+
+    .followers p,
+    .likes p,
+    .photos p {
+        font-size: 1.4vw;
+        letter-spacing: .2vw;
+        margin-top: .6vw;
+    }
+}
+
+@media (min-width: 768.5px) {
+    .attribution { font-size: 0.716vw; }
+
+    .bg-pattern-top {
+        bottom: 50%;
+        right: 50%;
+        transform: translate(2%, 13.5%);
+    }
+
+    .bg-pattern-bottom {
+        top: 50%;
+        left: 40%;
+        transform: translate(2%, -2%);
+    }
+
+    .profile-card { 
+        border-radius: 0.651vw; 
+        width: 23%;
+        box-shadow: 0 0.260vw 0.521vw 0 rgba(0, 0, 0, 0.2), 0 0.391vw 1.302vw 0 rgba(0, 0, 0, 0.19);
+    }
+
+    .bg-pattern-card {
+        border-top-left-radius: 0.651vw;
+        border-top-right-radius: 0.651vw;
+    }
+
+    .victor { outline: 0.358vw solid var(--white); }
+
+    .name-age {
+        padding-top: 5vw;
+        gap: .6vw;
+    }
+
+    .name,
+    .age { font-size: 1.172vw; }
+
+    .city { 
+        font-size: 0.977vw; 
+        margin-top: .6vw;
+        margin-bottom: 2vw;
+    }
+
+    hr { border-width: 0 0 0.130vw; }
+
+    .stats {
+        gap: 3vw;
+        margin: 1.5vw;
+    }
+
+    .followers h3,
+    .likes h3,
+    .photos h3 { font-size: 1.2vw; }
+
+    .followers p,
+    .likes p,
+    .photos p {
+        font-size: .7vw;
+        letter-spacing: .1vw;
+        margin-top: .3vw;
+    }
+}
